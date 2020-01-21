@@ -20,6 +20,7 @@ public class BasePage {
     ExtendReportMethods reporter=new ExtendReportMethods();
 
     public WebDriver driver= getDriver();
+    private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
     public WebElement waitUntilVisibleByLocator(By locator) {
@@ -237,6 +238,17 @@ public class BasePage {
             reporter.Report_Fail(e.getMessage());
         }
         return "";
+    }
+
+
+    public String randomAlphaNumeric(int count) {
+
+        StringBuilder builder = new StringBuilder();
+        while (count-- != 0) {
+            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
+            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
+        }
+        return (builder.toString()).toLowerCase();
     }
 
 

@@ -15,7 +15,6 @@ import java.util.Properties;
 public class TestBase {
 
     ExtendReportMethods extendReportMethods= new ExtendReportMethods();
-    //public static TestNGCucumberRunner testNGCucumberRunner;
 
     public static String BASEURL=null;
     public static String BROWSER=null;
@@ -30,7 +29,6 @@ public class TestBase {
     public static WebDriver getDriver() {
         return driver;
     }
-
 
     public void initializeConfig(){
 
@@ -62,22 +60,7 @@ public class TestBase {
             ITestNGMethod method = (ITestNGMethod)var8.next();
             method.setRetryAnalyzer(new ReTryTestCase());
         }
-
     }
-
-
-//    @BeforeClass(alwaysRun = true)
-//    public void beforeClass(){
-//
-//        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-//    }
-
-//    @DataProvider(parallel = true)
-//    public Object[][] features() {
-//        //return testNGCucumberRunner.provideFeatures();
-//        return testNGCucumberRunner.provideScenarios();
-//    }
-
 
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(Method method){
@@ -91,7 +74,6 @@ public class TestBase {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
 
 
@@ -119,18 +101,6 @@ public class TestBase {
             e.printStackTrace();
         }
     }
-
-//    @AfterClass(alwaysRun = true)
-//    public void afterClass(){
-//
-//        try {
-//
-//            testNGCucumberRunner.finish();
-//
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
-//    }
 
     @BeforeTest
     public void beforeTest(){
