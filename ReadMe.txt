@@ -24,3 +24,5 @@ Projeyi Ayaga kaldirmak icin Gerekenler:
 * Intelli J Idea ( Link: https://www.jetbrains.com/idea/download/#section=mac),
 * Maven (https://maven.apache.org/download.cgi),
 * Git (https://git-scm.com/downloads)
+
+
