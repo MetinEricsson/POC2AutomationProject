@@ -1,3 +1,17 @@
+
+ÖNEMLİ NOT:
+
+* Uygulama Chrome Browser üzerinde çalışacak şekilde tasarlanmıştır.
+* Chrome 79 versiyonu için "Drivers" klasörünün içine driver lar eklenmiştir.
+
+Uygulama çalıştırılmadan önce koşum yapılacak makinede yüklü Chrome Browser ın versiyonu kontrol edilmeli,
+farklı bir versiyon yüklü ise aşağıdaki link üzerinden uygun versiyona ait driver indirilerek
+"Drivers" klasörüne eklenmelidir.
+(Mac ve Windows OS için "chromedriver" isminde Linux OS için "chromedriver_linux" isminde driver eklenmelidir.)
+
+Chrome Driver Link: ( https://chromedriver.chromium.org/downloads )
+
+
 Proje Hakkında Bilgiler
 
 * Proje Java dilinde Maven projesi olarak olusturulmustur.
@@ -13,7 +27,7 @@ gridUrl= Remote URL,
 reTry= Hata alan senaryo kac defa kossun,
 headlessBrowser=HeadlessBrowser ile mi senaryolar kossun (true,false)
 
-* Proje icerisindeli otomasyon senaryolarini calistirmak icin "testng.xml" dosyasina mouse ile sag click yapip Run dememiz yeterlidir.
+* Proje icerisindeli otomasyon senaryolarini calistirmak icin "testng.xml" dosyasina mouse ile sag click yapip " Run " dememiz yeterlidir.
 * Kosum sonuclari "test-output" directory nin altinda "AutomationReport.html" ve "CustomizedReport.html" olacak sekilde iki farkli rapor olusmaktadir.
 
 
@@ -24,5 +38,7 @@ Projeyi Ayaga kaldirmak icin Gerekenler:
 * Intelli J Idea ( Link: https://www.jetbrains.com/idea/download/#section=mac),
 * Maven (https://maven.apache.org/download.cgi),
 * Git (https://git-scm.com/downloads)
+
+
 
 
